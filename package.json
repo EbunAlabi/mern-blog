@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "Mern stack based project to fast track learning",
   "main": "index.js",
+  "engine": {
+    "node":"10.16.3",
+    "npm":"6.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "backend":"nodemon index.js"
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "Ebunoluwa Alabi",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.4.20",
     "nodemon": "^2.0.4"
   }
